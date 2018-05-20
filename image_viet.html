@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://www.w3schools.com/w3css/tryw3css_templates_photo3.htm# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Our First Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<style>
+	del{text-decoration:none; font-style:normal}
+	.animated.standby {
+		-webkit-animation: none !important;
+		-o-animation: none !important;
+		animation: none !important;
+		visibility: hidden;
+	}
+	.main-panel {
+	  min-height:100vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+	.main-panel:nth-child(even) {
+	  background-color:#ccc;
+	}
+	.col-wrapper {
+	  max-width:500px;
+	  margin:0 auto;
+	}
+	.col-wrapper .col {
+	  display:inline-block;
+	  vertical-align: top;
+	  width:30%;
+	  padding:0 5px;
+	}
+</style>
+<script src="js/jquery.min.js"></script> <!-- 3.3.1 -->
+<script src="js/t.min.js"></script> <!-- 1.1 -->
+<script type="text/javascript" src="js/jquery-css3-animation-queue.js"></script>
+<script type="text/javascript">
+$(function(){
+
+
+
+ $('#t').t({
+  
+  delay:2,                // start delay in seconds [default:0]
+  
+  speed:55,               // typing speed (ms) [default:75]
+  speed_vary:false,       // 'human like' speed variation [default:false]
+  
+  beep:false,              // beep while typing (Web Audio API) [default:false]
+  
+  mistype:false,          // mistype rate: 1:N per char [default:false]
+  locale:'en',            // keyboard layout (to fit mistype); supported: 'en' (english) or 'de' (german) [default:'en']
+  
+  caret:false,         // caret content; can be html too [default:true (\u258e)]
+  blink:true,             // blink-interval in ms; if TRUE, speed*3  [default:true]
+  blink_perm:false,       // permanent blinking? if FALSE, caret blinks only on delay/pause/finish [default:false]
+
+  repeat:false,               // repeat typing: if TRUE, infinite or N times [default:0]
+  tag:'span',             // wrapper tag (.t-container, .t-caret) [default:'span']
+  pause_on_click:true,    // pauses/continues typing on click/tap (elm) [default:false]
+
+  
+  // init callback (ready-to-type)
+  init:function(elm){},        
+  // typing callback
+  typing:function(elm,chr_or_elem,left,total){},
+  // finished callback
+  fin:function(elm){}          
+ 
+ });
+ $("#t").t('pause',true);
+ });
+ 
+</script>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="images/header.png" alt="Me" width="1501" height="600" alt="ảnh hài hước">
+
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="home_viet.html" class="w3-bar-item w3-button">Trang chủ</a>
+	<a href="#" class="w3-bar-item w3-button" style="color:white;background-color:grey">Hình</a>
+    <a href="audio_viet.html" class="w3-bar-item w3-button">Nhạc</a>
+    <a href="video_viet.html" class="w3-bar-item w3-button">Phim</a>
+	<a href="disclaimer_viet.html" class="w3-bar-item w3-button">Disclaimer</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="home_viet.html" class="w3-bar-item w3-button">Trang chủ</a>
+  <a href="#" class="w3-bar-item w3-button" style="color:white;background-color:grey">Hình</a>
+  <a href="audio_viet.html" class="w3-bar-item w3-button">Nhạc</a>
+  <a href="video_viet.html" class="w3-bar-item w3-button">Phim</a>
+  <a href="disclaimer_viet.html" class="w3-bar-item w3-button">Disclaimer</a>
+</div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+
+  <p align="right">Change language: <a href="image.html" style="text-decoration:none;color:red">English</a></p>
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center" style="color:#999900"><strong>Ảnh chế</strong></h3>
+    <p align="center">Đây là một số bức ảnh hài hước được thu thập từ trên mạng, mong là mọi người sẽ có thời gian thật vui vẻ: </p>
+	<img src="images/oscars.jpg" class="w3-image animated standby fadeIn"  alt="LOTR rocks"><hr>
+	<img src="images/huskies.jpg" class="w3-image animated standby fadeIn"  alt="Sandy bois"><hr>
+	<img src="images/dragonball.jpg" id="t_trigger" class="w3-image animated standby fadeIn" alt="Close enough"><hr>
+	<!-- Game flappy bird -->
+	
+	<div id="t" class="animated standby fadeIn" data-delay="2000"><p align="center"><ins>1.2</ins>Thật là <del>tuyet65<ins>1.2</ins></del>tuyệt vời bạn đã tìm ra <font size="10" color="red">easter egg</font>. Bạn có thể chơi nó ngay bây giờ (ngay cả khi bạn đang sử dụng điện thoại).</p>
+	<div id="frame" align="center"><embed src="swf/Game_FlappyBird.swf" width="100%" height="555" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" menu="false" wmode="transparent"></embed></div>
+	</div>
+	
+	<!-- Đoạn script đặc biệt dùng để kết hợp 2 hiệu ứng fade in và text animation -->
+	<script type="text/javascript">$(window).scroll(function() {
+		var test=document.getElementById("t_trigger");
+		var testClass = test.className;
+		if(testClass=="w3-image animated fadeIn"){
+			$("#t").t('pause',false);
+			}	
+	}); // end document ready
+	</script>
+	
+  </div>
+</div>
+</body></html>

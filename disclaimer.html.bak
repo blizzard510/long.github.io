@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://www.w3schools.com/w3css/tryw3css_templates_photo3.htm# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Our First Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+</head><body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="images/header.png" alt="Me" width="1501" height="600" alt="relax">
+
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="home.html" class="w3-bar-item w3-button">Home</a>
+	<a href="image.html" class="w3-bar-item w3-button">Image</a>
+    <a href="audio.html" class="w3-bar-item w3-button">Audio</a>
+    <a href="video.html" class="w3-bar-item w3-button">Video</a>
+	<a href="#" class="w3-bar-item w3-button" style="color:white;background-color:grey">Disclaimer</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="home.html" class="w3-bar-item w3-button">Home</a>
+  <a href="image.html" class="w3-bar-item w3-button">Image</a>
+  <a href="audio.html" class="w3-bar-item w3-button">Audio</a>
+  <a href="video.html" class="w3-bar-item w3-button">Video</a>
+  <a href="#" class="w3-bar-item w3-button" style="color:white;background-color:grey">Disclaimer</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+  <p align="right">Chuyễn ngôn ngữ: <a href="disclaimer_viet.html" style="text-decoration:none;color:red">Tiếng Việt</a></p>
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center" style="color:red">Fair use</h3>	
+    <p><font color="#f1f1f1">a</font>Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.<br><br><font color="#f1f1f1">a</font>I don't own any of these components. This website makes no profit to the creators.</p></p>
+	<img class="w3-image" src="images/fairuse.jpg" width="1500" height="1363" border="0" alt="fair use">
+  </div>
+</div>
+</body></html>
